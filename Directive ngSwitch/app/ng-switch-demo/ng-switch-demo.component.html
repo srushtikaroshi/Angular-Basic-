@@ -1,0 +1,11 @@
+<h1> Languages </h1>
+<div [ngSwitch]="Batch">
+
+  <div *ngSwitchCase="'c'">You have selected c language</div>
+  <div *ngSwitchCase="'c++'">You have selected c++ language</div>
+  <div *ngSwitchCase="'java'">You have selected java language</div>
+  <div *ngSwitchCase="'python'">You have selected python language</div>
+
+  <div *ngSwitchDefault>Wrong Selection</div>
+
+</div>

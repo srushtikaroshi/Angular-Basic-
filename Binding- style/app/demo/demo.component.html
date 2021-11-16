@@ -1,0 +1,9 @@
+<!--We can directly set color property to html contents-->
+<!-- It looks like class binding-->
+<h3 [style.color]="'red'">Style binding is used to set a style of a view element.</h3>
+
+<!-- We can also set the style depends on the condition as-->
+<h3 [style.color]="IsSet ? 'green' : 'red' ">You can set the inline styles of an HTML element using the style binding in angular.</h3>
+
+<!--We can also set the proerty through the class characteristics-->
+<h3 [style.color]="MyColor">You can also add styles conditionally to an element, hence creating a dynamically styled element.</h3>

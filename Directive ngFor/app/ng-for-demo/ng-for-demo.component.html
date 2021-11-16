@@ -1,0 +1,9 @@
+<h1> Structural Directives </h1>
+<div *ngFor= "let value of Batches">
+  <h2>{{value}}</h2>
+</div>
+
+<h2>- List with index -</h2>
+<div *ngFor= "let value of Batches; index as i">
+  <h2>{{i}}  {{value}}</h2>
+</div>

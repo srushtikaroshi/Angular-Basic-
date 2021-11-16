@@ -1,0 +1,22 @@
+<!--By using class attributes we can use class from css file-->
+
+<h3 class="success">
+  Class binding is used to set a class property of a view element.
+    </h3>
+    
+    <h3 class="Failure">
+      We can add and remove the CSS class names from an element's class attribute with class binding.
+    </h3>
+    
+    <!--We can also use like proerty binding for the class-->
+    <!-- in .ts file there should be attribute named as MyClass-->
+    <h3 [class]="MyClass">
+      The class binding syntax is also like property binding.
+    </h3>
+    
+    
+    <!-- We can set class property depending upon the condition-->
+    <h3 [class.success]="IsSet">
+      Angular Development
+    </h3>
+    

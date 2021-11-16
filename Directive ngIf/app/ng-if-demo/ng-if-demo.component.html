@@ -1,0 +1,27 @@
+<h1>Programming in</h1>
+
+<!--Use of ngIf in case of hardcoded value-->
+<h1 *ngIf="false">c</h1>
+
+<!-- We can use any property with ngIf-->
+<h1 *ngIf="flag">c++</h1>
+
+<!-- We can also perform if else partition-->
+<h1 *ngIf="flag; else OtherPart">Java</h1>
+
+<ng-template #OtherPart>
+  <h1>
+    Python
+  </h1>
+</ng-template>
+
+<!--We can also use below syntax for if else-->
+<div *ngIf="flag; then ifblock; else elseblock"></div> 
+
+<ng-template #ifblock>
+  <h1>React</h1>
+</ng-template>
+
+<ng-template #elseblock>
+  <h1> Angular </h1>
+</ng-template>

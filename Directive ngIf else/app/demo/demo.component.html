@@ -1,0 +1,17 @@
+<label>Please enter branch name  </label>
+
+<input type="text" (input)="fun($event)">
+<p></p>
+<button (click)= "gun()">Submit</button>
+
+
+<!--Now we can display that data on page usng string interpolation-->
+<p *ngIf="flag; else noname">{{str}}</p>
+<ng-template #noname>
+    <p>Please select branch</p>
+    <p>Our branches : </p>
+    <P>Computer Science Technology</P>
+    <p>Electronics and Telecommunication</p>
+    <p>Food Technology</p>
+    <p>Chemical Engineering</p>
+</ng-template>
